@@ -1,0 +1,282 @@
+body
+{
+    margin: 0;
+}
+.front-page
+{
+    width: 100%;
+    height: 47vw;
+    background-image: url("/images/DEHRADUN.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 47vw;
+    margin: 0;
+
+}
+.main-heading-english{
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    /* left: 3vw; */
+    font-size: 2vw;
+    text-align: center;
+}
+.heading-hr
+{
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    width: 15vw;
+    border: 0.5px solid rgb(80, 106, 221);
+}
+.main-heading-hindi{
+    margin: 0;
+    position: relative;
+    top: 3vw;
+    left: 0;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.scroll-images
+{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 47vw;
+    z-index: -1;
+}
+.individual-state-name
+{
+    margin: 0;
+    position: relative;
+    /* display: block; */
+    /* border: 1px solid blue; */
+    top: 3vw;
+    left: 0;
+    font-size: 1.7vw;
+    text-align: center;
+}
+.individual-state-link
+{
+    color: rgba(0, 0, 0, 0.356);
+}
+.individual-state-name-2
+{
+    margin: 0;
+    position: relative;
+    /* border: 1px solid red; */
+    top: 1.05vw;
+    left: 0;
+    font-size: 1.7vw;
+    text-align: center;
+    
+}
+
+.individual-state-link-2
+{
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+    animation-timing-function: linear;
+    animation-name: stateNameAnimate;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes stateNameAnimate
+{
+    from{width: 0%;}
+    to{width: 20%;}
+}
+/* NAVBAR */
+.main-logo
+{
+display: inline-block;
+/* position: fixed; */
+margin-left: 3vw;
+height: 8vw;
+width: 8vw;
+}
+.main-logo-2
+{
+    position: fixed;
+    top: 1vw;
+    left: 3vw;
+    height: 5vw;
+}
+.navbar-list
+{
+    display: inline-block;
+    position: fixed;
+    /* margin-left: 17vw; */
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    top: 3vw;
+    right: 3vw;
+    border-bottom: 2px solid rgb(80, 106, 221);
+}
+.navbar-list-2
+{
+    display: inline-block;
+    position: fixed;
+    /* margin-left: 17vw; */
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+    top: 1vw;
+    right: 3vw;
+    border-bottom: 2px solid rgb(80, 106, 221);
+}
+.navbar-list-items
+{
+    display: inline-block;
+    font-size: 1vw;
+    font-weight: bolder;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
+    font-family: Verdana;
+}
+.navbar-link
+{
+    color: black;
+    text-decoration: none;
+    font-size: 2vwvw;
+}
+.navbar-link:hover
+{
+    background-color: rgb(80, 106, 221);
+    color: white;
+}
+/* LOGIN-BOX-SETUP */
+.login-front-page
+{
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 20vw;
+    height: 20vw;
+    background-color: rgba(255, 255, 255, 0.534);
+    border-radius: 3vw;
+    box-shadow: 5px 10px 18px ;
+    position: relative;
+    top: 3vw;
+    left: 65vw;
+}
+.login-title
+{
+    text-align: center;
+    margin-bottom: 0;
+    font-family: inherit;
+    font-size: 3vw;
+}
+.login-hr
+{
+    border: 0.5px solid rgb(80, 106, 221);
+    width: 50%;
+}
+.login-fields
+{
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-left: 0.5vw;
+    font-size: 1.3vw;
+}
+.login-input-fields
+{
+    display: inline-block;
+    width: 10vw;
+    background-color: rgba(255, 255, 255, 0);
+    border: none;
+    border-bottom: 1px solid black;
+}
+.login-button-div
+{
+    display: block;
+    width: 10.5vw;
+    margin-top: 1vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+.login-button
+{
+    width: 5vw;
+    border-radius: 1vw;
+    background-color: rgba(240, 248, 255, 0.37);
+    font-size: 1vw;
+}
+.login-button:hover
+{
+    width: 5vw;
+    border-radius: 1vw;
+    background-color: rgb(122, 180, 231);
+}
+
+/* MIDSECTION */
+
+.district
+{
+    display: inline-block;
+    padding: 15px;
+    width: 20%;
+}
+.card-title
+{
+    padding-bottom: 10px;
+}
+.district-map
+{
+    border:1px solid rgba(207, 207, 207, 0.863);
+    padding:3px
+}
+
+.main-intro
+{
+    display: inline-block;
+    width: 55%;
+}
+
+.news-section
+{
+    display: inline-block;
+    margin-left: 1vw;
+    width: 20%;
+}
+
+.scrolling-feed
+{
+    width: 100%;
+    height:350px;
+    border:1px solid rgba(207, 207, 207, 0.863);
+    /* padding:20px */
+}
+.news-list-section
+{
+    padding: 0;
+    padding-left: 1vw;
+    padding-right: 1vw;
+}
+.individual-news
+{
+    list-style: none;
+}
+/* FOOTER */
+.footer
+{
+    background-color: black;
+    padding: 3vw;
+}
+.copyright-claim
+{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
+.counter p
+{
+    color: white;
+    margin: 0;
+    text-align: center;
+}
