@@ -5,23 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Government Of Uttrakhand</title>
     <link href="css/index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="favicon.ico">
 </head>
 <body>
-    <div class="front-page">
-        <div class="nav-bar">
-            <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
-            <ul class="navbar-list" id="navbarList">
-                <li class="navbar-list-items"><a href="" class="navbar-link">HOME</a></li>
-                <!-- <li class="navbar-list-items"><a href="" class="navbar-link">ABOUT</a></li> -->
-                <li class="navbar-list-items"><a target="_blank" href="https://uk.gov.in/pages/display/1143-departments" class="navbar-link">DEPARTMENTS</a></li>
-                <li class="navbar-list-items"><a target="_blank" href="https://uk.gov.in/pages/display/1144-directorates" class="navbar-link">DIRECTORATES</a></li>
-                <li class="navbar-list-items"><a target="_blank" href="https://uk.gov.in/pages/display/1145-organisations--boards" class="navbar-link">ORGANIZATION</a></li>
-                <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">REPORTS</a></li>
-                <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
-                <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
-            </ul>
+    <div class="nav-bar">
+        <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
+        <!-- HAMURGER MENU ICON -->
+        <div class="hamburger-menu">
+            <a  class="icon" onclick="hamburgerMenuShowFunction()">
+                <i class="fas fa-bars"></i>
+            </a>
         </div>
-        
+        <ul class="navbar-list" id="navbarList">
+            <li class="navbar-list-items"><a href="" class="navbar-link">HOME</a></li>
+            <!-- <li class="navbar-list-items"><a href="" class="navbar-link">ABOUT</a></li> -->
+            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1143-departments" class="navbar-link">DEPARTMENTS</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1144-directorates" class="navbar-link">DIRECTORATES</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1145-organisations--boards" class="navbar-link">ORGANIZATION</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="" class="navbar-link">REPORTS</a></li>
+            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
+            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
+        </ul>
+    </div>
+    <div class="front-page">
         <div >
             <!-- Main Frontpage heading -->
             <h1 class="main-heading-english"> Government of Uttarakhand</h1>
@@ -33,7 +40,7 @@
             <h1 class="individual-state-name-2"><a href="www.google.com" class="individual-state-link-2">DEHRADUN</a></h1>
         </div>
 
-        <div class="login-front-page">
+        <!-- <div class="login-front-page">
             <h1 class="login-title">Login...</h1>
             <hr class="login-hr">
             <div>
@@ -48,13 +55,13 @@
                 <button class="login-button">Login</button>
                 <button class="login-button">Sign up</button>
             </div>
-        </div>
+        </div> -->
     </div>
 
     <!-- MIDSECTION -->
     <div class="midsection">
         <div class="district">
-            <h3 class="card-title" >Districts </h3>
+            <h3 class="card-title" style="width: 40%">Districts </h3>
             <div class="district-map">
                 <img src="images/map.jpg" alt="Map" title="Map" usemap="#Map" />
             </div>
@@ -91,10 +98,10 @@
         
         <div class="main-intro">
             <h3>
-                <span style="color:#920B0B;">Welcome to Uttarakhand</span>
+                <span class="main-intro-heading">Welcome to Uttarakhand</span>
             </h3>
             <br>
-            <a>Uttarakhand was formed on the 9th November 2000 as the 27th State of India, when it was carved out of northern Uttar Pradesh. Located at the foothills of the Himalayan mountain ranges, it is largely a hilly State, having international boundaries with China (Tibet) in the north and Nepal in the east. On its north-west lies Himachal Pradesh, while on the south is Uttar Pradesh. It is rich in natural resources especially water and forests with many glaciers, rivers, dense forests and snow-clad mountain peaks. Char-dhams, the four most sacred and revered Hindu temples of Badrinath,Kedarnath, Gangotri and Yamunotri are nestled in the mighty mountains. It’s truly God’s Land (Dev Bhoomi). Dehradun is the Capital of Uttarakhand. It is one of the most beautiful resort in the submountain tracts of India, known for its scenic surroundings. The town lies in the Dun Valley, on the watershed of the Ganga and Yamuna rivers.
+            <a >Uttarakhand was formed on the 9th November 2000 as the 27th State of India, when it was carved out of northern Uttar Pradesh. Located at the foothills of the Himalayan mountain ranges, it is largely a hilly State, having international boundaries with China (Tibet) in the north and Nepal in the east. On its north-west lies Himachal Pradesh, while on the south is Uttar Pradesh. It is rich in natural resources especially water and forests with many glaciers, rivers, dense forests and snow-clad mountain peaks. Char-dhams, the four most sacred and revered Hindu temples of Badrinath,Kedarnath, Gangotri and Yamunotri are nestled in the mighty mountains. It’s truly God’s Land (Dev Bhoomi). Dehradun is the Capital of Uttarakhand. It is one of the most beautiful resort in the submountain tracts of India, known for its scenic surroundings. The town lies in the Dun Valley, on the watershed of the Ganga and Yamuna rivers.
                 <br><br>It is blessed with a rare bio-diversity, inter-alia, 175 rare species of aromatic & medicinal plants are found in the State. It has almost all major climatic zones, making it amenable to a variety of commercial opportunities in horticulture, floriculture and agriculture. It has a vast tourism potential in adventure, leisure, and eco-tourism.
                 <br><br>The State is rich in mineral deposits like limestone, marble, rock phosphate, dolomite, magnesite, copper, gypsum, etc. The number of small scale industries is 25,294 providing employment to 63,599 persons. As many as 1802 heavy and medium industries with an investment of Rs 20,000 crore employ 5 lakh persons. Most of the industries are forest-based. There is a total of 54,047 handicraft units in the state.
                 <a href="https://uk.gov.in/pages/view/93-state-profile" target="_blank">Read more</a>
@@ -102,7 +109,7 @@
         </div>
 
         <div class="news-section" >
-            <h3 class="card-title" style="padding-bottom: 10px;">News and Announcements</h3>
+            <h3 class="card-title" >News and Announcements</h3>
                 <marquee id="externalmarquee4" class="scrolling-feed" scrolldelay="50" onmouseout="this.scrollAmount=1" onmouseover="this.scrollAmount=0" scrollamount="8" direction="up">
                     <div class="ne">
                     <ul class="news-list-section">
@@ -135,8 +142,8 @@
     </div>
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
     <script type="text/javascript">
-        var images = ["DEHRADUN.jpg", "HARIDWAR.jpg","NANITAL.jpg","TEHRI.png","UTTARKASHI.jpeg"];
-        var places = ["DEHRADUN","HARIDWAR","NANITAL","TEHRI","UTTARKASHI"];
+        var images = ["DEHRADUN.jpg","TULIP.jpg", "HARIDWAR.jpg","NANITAL.jpg","TEHRI.png","UTTARKASHI.jpeg"];
+        var places = ["DEHRADUN","TULIPGARDEN","HARIDWAR","NANITAL","TEHRI","UTTARKASHI"];
         $(function () 
         {
             var i = 0;
@@ -178,6 +185,15 @@
             document.getElementById("navbarList").className = "navbar-list";
           }
         }
+        function hamburgerMenuShowFunction() {
+            console.log("called")
+            var x =document.getElementById("navbarList");
+            if (x.style.display === "block") {
+              x.style.display = "none";
+            } else {
+              x.style.display = "block";
+            }
+          }
     </script>
  
 </body>
