@@ -122,6 +122,8 @@ body
         /* display: inline-block; */
         /* position: relative; */
         display: none;
+        height: 0vw;
+        overflow: hidden;
         margin-left: 17vw;
         padding-left: 1.5vw;
         padding-right: 1.5vw;
@@ -130,12 +132,22 @@ body
         bottom: 7vw;
         right: 3vw;
         border-bottom: 2px solid rgb(80, 106, 221);
+        animation-timing-function: linear;
+        animation-name: navbarShowIn;
+        animation-duration: 1s;
+        animation-fill-mode: forwards;
      } 
+     @keyframes navbarShowIn
+     {
+         from{height: 0vw}
+         to{height: 15vw}
+     }
     .navbar-list-2
     {
         /* display: inline-block; */
         /* position: relative; */
         display: none;
+        height: 0vw;
         margin-left: 17vw;
         padding-left: 1.5vw;
         padding-right: 1.5vw;
@@ -144,6 +156,10 @@ body
         bottom: 7vw;
         right: 3vw;
         border-bottom: 2px solid rgb(80, 106, 221);
+        animation-timing-function: linear;
+        animation-name: navbarShowIn;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
     }
     .navbar-list-items
     {
