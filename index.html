@@ -24,10 +24,44 @@
             <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1144-directorates" class="navbar-link">DIRECTORATES</a></li>
             <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1145-organisations--boards" class="navbar-link">ORGANIZATION</a></li>
             <li class="navbar-list-items" ><a target="_blank" href="" class="navbar-link">REPORTS</a></li>
+            <li class="navbar-list-items" ><button class="navbar-login-button" onclick="document.getElementById('loginWindow').style.display='block'">LOGIN</button></li>
             <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
             <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
         </ul>
     </div>
+
+
+    <div id="loginWindow" class="login-window">
+        <span onclick="document.getElementById('loginWindow').style.display='none'" class="close-login-window" title="Close Modal">
+            &times;
+        </span>
+      
+        <!-- Modal Content -->
+        <form class="login-window-content login-window-animate" action="/action_page.php">
+          
+          <div class="container">
+            <br><br>
+            <label for="uname"><b>Username: </b></label>
+            <input type="text" placeholder="Enter Username" name="uname" class="login-input-field" required>
+            <br><br>
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" class="login-input-field" required>
+            <br><br>
+            <button type="submit" class="login-button"> Login </button>
+            <button type="button" class="login-cancel-button" onclick="document.getElementById('loginWindow').style.display='none'" >Cancel</button>
+            <br><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+              <a href="#" class="forgot-password-link"><<< FORGOT PASSWORD >>></a>
+          </div>
+        </form>
+    </div>
+
+
     <div class="front-page">
         <div >
             <!-- Main Frontpage heading -->
@@ -59,8 +93,22 @@
     </div>
 
     <!-- MIDSECTION -->
+    
     <div class="midsection">
+        
         <div class="district">
+            <div class="ministers-section">
+                <div class="governor">
+                    <img src="/images/governor.jpg" alt="Governor">
+                    <a href="https://www.governoruk.gov.in/" class="ministers-link"><p >Governor</p></a>
+                    <a href="https://www.governoruk.gov.in/" class="ministers-link"><p >Smt. Baby Rani Maurya</p></a>
+                </div>
+                <div class="cheif-minister">
+                    <img src="/images/cheifminister.jpg" alt="cheif minister">
+                    <a href="https://cm.uk.gov.in/" class="ministers-link"><p>Cheif Minister</p></a>
+                    <a href="https://cm.uk.gov.in/" class="ministers-link"><p class="cheif-minister-name">Shri Trivendra Singh Rawat</p></a>
+                </div>
+            </div>
             <h3 class="card-title" style="width: 40%">Districts </h3>
             <div class="district-map">
                 <img src="images/map.jpg" alt="Map" title="Map" usemap="#Map" />
