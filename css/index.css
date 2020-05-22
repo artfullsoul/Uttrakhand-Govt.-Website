@@ -140,7 +140,7 @@ body
      @keyframes navbarShowIn
      {
          from{height: 0vw}
-         to{height: 21vw}
+         to{height: 27vw}
      }
     .navbar-list-2
     {
@@ -167,7 +167,7 @@ body
         text-align: right;
         color: aliceblue;
         list-style: none;
-        font-size: 2vw;
+        font-size: 3vw;
         font-weight: bolder;
         margin-top: 0.5vw;
         margin-bottom: 0.5vw;
