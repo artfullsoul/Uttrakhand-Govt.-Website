@@ -235,6 +235,20 @@ body
         width: 100%;
         height: 40vw;
     }
+    .view-reports-button
+    {
+        display: block;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(80, 106, 221);
+        color: white;
+        padding: 1vw;
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
 @media screen and (min-width: 900px)
 {
@@ -436,5 +450,19 @@ body
     {
         width: 100%;
         height: 13vw;
+    }
+    .view-reports-button
+    {
+        display: block;
+        width: 40%;
+        text-align: center;
+        text-decoration: none;
+        background-color: rgb(80, 106, 221);
+        color: white;
+        padding: 1vw;
+        margin-top: 0.5vw;
+        margin-bottom: 0.5vw;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
