@@ -3,16 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Directorate of Economics & Statistics-DEPARTMENTS</title>
+    <title>Agriculture Entry Form</title>
     <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="css/login.css" type="text/css">
-    <link rel="stylesheet" href="css/department.css" type="text/css">
+    <link rel="stylesheet" href="css/form.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
     <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico">
+
 </head>
 <body>
+    <!-- navbar -->
     <div class="nav-bar">
         <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
         <p class="navbar-text">Directorate of Economics & Statistics | Uttarakhand</p>
@@ -27,75 +28,39 @@
         </div>
         <ul class="navbar-list" id="navbarList">
             <li class="navbar-list-items"><a href="/index.html" class="navbar-link">HOME</a></li>
-            <!-- <li class="navbar-list-items"><a href="" class="navbar-link">ABOUT</a></li> -->
-            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1143-departments" class="navbar-link">DEPARTMENTS</a></li>
-            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1144-directorates" class="navbar-link">DIRECTORATES</a></li>
-            <li class="navbar-list-items" ><a target="_blank" href="https://uk.gov.in/pages/display/1145-organisations--boards" class="navbar-link">ORGANIZATION</a></li>
-            <li class="navbar-list-items" ><a target="_blank" href="" class="navbar-link">REPORTS</a></li>
-            <li class="navbar-list-items" ><button class="navbar-login-button" onclick="document.getElementById('loginWindow').style.display='block'">LOGIN</button></li>
+            <li class="navbar-list-items" ><a target="_blank" href="/department.html" class="navbar-link">DASHBOARD</a></li>
+            <li class="navbar-list-items" ><a target="_blank" href="/mainPage.html" class="navbar-link">DES UTTRAKHAND</a></li>
             <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
             <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
         </ul>
     </div>
 
-
-    <div id="loginWindow" class="login-window">
-        <span onclick="document.getElementById('loginWindow').style.display='none'" class="close-login-window" title="Close Modal">
-            &times;
-        </span>
-      
-        <!-- LOGIN WINDOW -->
-        <form class="login-window-content login-window-animate" action="/login" method="POST">
-          
-          <div class="container">
-            <br><br>
-            <label for="uname"><b>Username: </b></label>
-            <input type="text" placeholder="Enter Username" name="uname" class="login-input-field" required>
-            <br><br>
-            <label for="psw"><b>Password: </b></label>
-            <input type="password" placeholder="Enter Password" name="psw" class="login-input-field" required>
-            <br><br>
-            <button type="submit" class="login-button"> Login </button>
-            <button type="button" class="login-cancel-button" onclick="document.getElementById('loginWindow').style.display='none'" >Cancel</button>
-            <br><br>
-            <label>
-              <input type="checkbox" checked="checked" name="remember"> Remember me
-            </label>
-          </div>
-      
-          <div class="container" style="background-color:#f1f1f1">
-              <a href="#" class="forgot-password-link"><<< FORGOT PASSWORD >>></a>
-          </div>
-        </form>
-    </div>
     <!-- MIDSECTION -->
     <div class="midsection">
-        <h1 class="department-midsection-text">Department Stats Section</h1>
-        <div class="department-card">
-          <a href="www.google.com">
-            <p class="card-title">Energy & Power</p>
-            <img src="images/Screenshot (59).png" alt="" class="card-image">
-          </a>
-        </div>
-        <div class="department-card">
-          <a href="">
-            <p class="card-title">Population</p>
-            <img src="images/Screenshot (60).png" alt="" class="card-image">
-          </a>
-        </div>
-        <div class="department-card">
-          <a href="">
-            <p class="card-title">Education</p>
-            <img src="images/Screenshot (61).png" alt="" class="card-image">
-          </a>
-        </div>
-        <div class="department-card">
-          <a href="">
-            <p class="card-title">Education</p>
-            <img src="images/Screenshot (61).png" alt="" class="card-image">
-          </a>
-        </div>
+        <form action="/agriculture-table1" method="POST" class="input-form">
+            <h1 class="heading">Enter the values here</h1>
+            <label for="loc_category" class="input-labels"><b>Location Category:</b></label>
+            <input type="number"  name="loc_category" class="input-fields" readonly>
+            
+            <label for="loc_id" class="input-labels"><b>Location Id:</b></label>
+            <input type="text"  name="loc_id" class="input-fields">
+    
+            <label for="year" class="input-labels"><b>Year:</b></label>
+            <input type="number"  name="year" class="input-fields" >
+    
+            <label for="district" class="input-labels"><b>District:</b></label>
+            <input type="text"  name="sidtrict" class="input-fields" >
+    
+            <label for="area" class="input-labels"><b>Area:</b></label>
+            <input type="text"  name="area" class="input-fields">
+    
+            <label for="production" class="input-labels"><b>Production:</b></label>
+            <input type="text"  name="production" class="input-fields" >
+    
+            <button type="submit" class="submit-button">Submit</button>
+        </form>
     </div>
+    
 
     <!-- FOOTER SECTION -->
     <footer class="footer-distributed">
@@ -140,6 +105,7 @@
             </div>
         </div>
     </footer>
+
     <script>
         function hamburgerMenuShowFunction() {
             console.log("called")
@@ -152,5 +118,4 @@
           }
     </script>
 </body>
-
 </html>
