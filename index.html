@@ -6,12 +6,42 @@
     <title>UISS-Uttrakhand Integrated Statistical System</title>
     <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
     <link href="css/frontPage.css" rel="stylesheet">
+    <link href="css/login.css" rel="stylesheet">
 </head>
 <body>
     <div class="front-page-navbar">
-        <a href=""  class="button button-1">User Login</a>
+        <a onclick="document.getElementById('loginWindow').style.display='block'" class="button button-1">User Login</a>
         <a href="/second page.html"  class="button button-2">Guest Login</a>
         <!-- <a href=""  class="button button-3">SAS Login </a> -->
+    </div>
+    <div id="loginWindow" class="login-window">
+        <span onclick="document.getElementById('loginWindow').style.display='none'" class="close-login-window" title="Close Modal">
+            &times;
+        </span>
+      
+        <!-- Modal Content -->
+        <form class="login-window-content login-window-animate" action="/action_page.php">
+          
+          <div class="container">
+            <br><br>
+            <label for="uname"><b>Username: </b></label>
+            <input type="text" placeholder="Enter Username" name="uname" class="login-input-field" required>
+            <br><br>
+            <label for="psw"><b>Password: </b></label>
+            <input type="password" placeholder="Enter Password" name="psw" class="login-input-field" required>
+            <br><br>
+            <button type="submit" class="login-button"> Login </button>
+            <button type="button" class="login-cancel-button" onclick="document.getElementById('loginWindow').style.display='none'" >Cancel</button>
+            <br><br>
+            <label>
+              <input type="checkbox" checked="checked" name="remember"> Remember me
+            </label>
+          </div>
+      
+          <div class="container" style="background-color:#f1f1f1">
+              <a href="#" class="forgot-password-link"><<< FORGOT PASSWORD >>></a>
+          </div>
+        </form>
     </div>
     <div class="front-page-midsection">
         <h1 class="heading-1">UTTRAKHAND INTEGRATED STATISTICAL SYSTEM</h1>
