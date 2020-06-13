@@ -1,0 +1,115 @@
+.midsection
+{
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    border-left: 1px solid grey;
+    border-right: 1px solid grey;
+    padding-top: 2vw;
+    min-height: 45vw;
+}
+.midsection-main-heading
+{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.5vw;
+    color: rgb(0, 102, 255);
+}
+.input-form
+{
+    width: 80%;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgba(197, 193, 193, 0.137);
+    padding-bottom: 2vw;
+    border-radius: 20px;
+}
+.heading
+{
+    /* width: 80%; */
+    margin-top: 3vw;
+    margin-bottom: 3vw;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+    text-align: center;
+    color: rgb(204, 95, 95);
+    border-bottom: 1px solid grey;
+    /* border-radius: 10px; */
+}
+
+.input-labels
+{
+    display: inline-block;
+    width: 30%;
+    margin-top: 1vw;
+    margin-left: 15vw;
+    font-size: 1.5vw;
+    color: rgb(0, 102, 255);
+}
+.search-bar
+    {
+        width: 13.1%;
+        position: fixed;
+        right: 1vw;
+        top: 7vw;
+        border: 3px solid rgb(80, 106, 221);
+        border-radius: 10px;
+    }
+    .side-navigation-section
+    {
+        width: 13%;
+        position: fixed;
+        right: 1vw;
+        top: 10vw;
+        border: 1px solid grey;
+        border-radius: 10px;
+    }
+    .side-navigation-list
+    {
+        padding: 0;
+    }
+    .side-navigation-list-items
+    {
+        list-style: none;
+        text-align: left;
+        background-color: rgb(80, 106, 221);
+        margin-top: 0.2vw;
+        border-bottom: 1px solid black;
+        border-top: 1px solid black;
+    }
+    .side-navigation-list-items a
+    {
+        text-decoration: none;
+        color: white;
+    }
+.input-fields
+{
+
+}
+
+.submit-button
+{
+    background-color: rgb(112, 231, 158);
+    color: white;
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    border: 1px solid black;
+    margin-top: 3vw;
+    border-radius: 10px;
+    margin-left: 15vw;
+}
+.submit-button:hover
+{
+    background-color:white;
+    color: rgb(112, 231, 158);
+    display: block;
+    width: 10vw;
+    height: 2vw;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin-left: 18vw;
+}

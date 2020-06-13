@@ -6,7 +6,7 @@
     <title>Agriculture Entry Form</title>
     <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
     <link rel="stylesheet" href="css/navbar.css" type="text/css">
-    <link rel="stylesheet" href="css/form.css" type="text/css">
+    <link rel="stylesheet" href="css/agricultureForms.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
     <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
     <link rel="icon" href="favicon.ico">
@@ -37,7 +37,19 @@
 
     <!-- MIDSECTION -->
     <div class="midsection">
-
+        <h1 class="midsection-main-heading">Agriculture Department Dashboard</h1>
+        <hr>
+        <input type="search" placeholder="Search.." class="search-bar">
+        <div class="side-navigation-section">
+            <ul class="side-navigation-list">
+                <li class="side-navigation-list-items"><a  id="id01">Sugarcane in District</a></li>
+                <li class="side-navigation-list-items"><a  id="id02">Sugarcane in Year</a></li>
+                <li class="side-navigation-list-items"><a  id="id03">District Cereal Crops</a></li>
+                <li class="side-navigation-list-items"><a  id="id04">Yearwise cereal Crops</a></li>
+                <li class="side-navigation-list-items"><a  id="id05">Districtwise Oilseed Crops</a></li>
+                <li class="side-navigation-list-items"><a  id="id06">Yearwise Oilseed Crops</a></li>
+            </ul>
+        </div>
         <!-- Table 1 (Sugarcane in District) -->
         <form action="/sugarcane-in-district" id="sugarcane-in-district" method="POST" class="input-form">
             <h1 class="heading">Sugarcane in District:</h1>
@@ -1266,7 +1278,7 @@
     
 
     <!-- FOOTER SECTION -->
-    <form action="/" id="" class="input-form">
+    <!-- <form action="/" id="" class="input-form">
         <h1 class="heading"></h1>
 
         <label for="loc_category" class="input-labels"><b>Location Category:</b></label>
@@ -1286,7 +1298,7 @@
 
         <button type="submit" class="submit-button">Submit</button>
 
-    </form>
+    </form> -->
     <footer class="footer-distributed">
  
         <div class="footer-left">   
@@ -1340,6 +1352,49 @@
               x.style.display = "block";
             }
           }
+
+        document.getElementById("id01").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("sugarcane-in-district").style.display="block"
+        });
+
+        function myFunction()
+        {
+            var x = document.querySelectorAll(".input-form");
+            x.forEach(val => {
+                val.style.display="none";
+            })
+        }
+        document.getElementById("id02").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("sugar-in-year").style.display="block"
+        });
+
+        document.getElementById("id03").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("district-cereal-crops").style.display="block"
+        });
+
+        document.getElementById("id04").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("yearwise-cereal-crops").style.display="block"
+        });
+
+        document.getElementById("id05").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("district-oilseed-crops").style.display="block"
+        });
+
+        document.getElementById("id06").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("yearwise-oilseed-crops").style.display="block"
+        });
+
+        document.getElementById("id0").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("").style.display="block"
+        });
+
     </script>
 </body>
 </html>
