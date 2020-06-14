@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Agriculture Entry Form</title>
     <link rel = "icon" href = "images/india.png" type = "image/x-icon"> 
-    <link rel="stylesheet" href="css/navbar.css" type="text/css">
     <link rel="stylesheet" href="css/agricultureForms.css" type="text/css">
     <link rel="stylesheet" href="css/footer.css" type="text/css">
     <script src="https://kit.fontawesome.com/7fc0c7085f.js" crossorigin="anonymous"></script>
@@ -17,9 +16,6 @@
     <div class="nav-bar">
         <img src="images/uk.png" alt="uk-logo" class="main-logo" id="mainLogo">
         <p class="navbar-text">Directorate of Economics & Statistics | Uttarakhand</p>
-        <!-- <p  class="navbar-text-part1">Directorate of Economics & Statistics</p>
-        <hr class="navbar-hr">
-        <p  class="navbar-text-part2">Government of Uttarakhand</p> -->
         <!-- HAMURGER MENU ICON -->
         <div class="hamburger-menu" onclick="hamburgerMenuShowFunction()">
             <a  class="icon" >
@@ -30,8 +26,6 @@
             <li class="navbar-list-items"><a href="/index.html" class="navbar-link">HOME</a></li>
             <li class="navbar-list-items" ><a target="_blank" href="/department.html" class="navbar-link">DASHBOARD</a></li>
             <li class="navbar-list-items" ><a target="_blank" href="/mainPage.html" class="navbar-link">DES UTTRAKHAND</a></li>
-            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">CONTACT US</a></li> -->
-            <!-- <li class="navbar-list-items"><a target="_blank" href="" class="navbar-link">FEEDBACK</a></li> -->
         </ul>
     </div>
 
@@ -39,17 +33,7 @@
     <div class="midsection">
         <h1 class="midsection-main-heading">Agriculture Department Dashboard</h1>
         <hr>
-        <input type="search" placeholder="Search.." class="search-bar">
-        <div class="side-navigation-section">
-            <ul class="side-navigation-list">
-                <li class="side-navigation-list-items"><a  id="id01">Sugarcane in District</a></li>
-                <li class="side-navigation-list-items"><a  id="id02">Sugarcane in Year</a></li>
-                <li class="side-navigation-list-items"><a  id="id03">District Cereal Crops</a></li>
-                <li class="side-navigation-list-items"><a  id="id04">Yearwise cereal Crops</a></li>
-                <li class="side-navigation-list-items"><a  id="id05">Districtwise Oilseed Crops</a></li>
-                <li class="side-navigation-list-items"><a  id="id06">Yearwise Oilseed Crops</a></li>
-            </ul>
-        </div>
+        
         <!-- Table 1 (Sugarcane in District) -->
         <form action="/sugarcane-in-district" id="sugarcane-in-district" method="POST" class="input-form">
             <h1 class="heading">Sugarcane in District:</h1>
@@ -278,7 +262,7 @@
 
         </form>
 
-        <!-- table 9(Operational Holding Year) -->
+        <!-- table 10(Operational Holding Year) -->
         <form action="/operational-holding-year" id="operational-holding-year" class="input-form">
             <h1 class="heading">Operational Holding Year:</h1>
 
@@ -310,7 +294,7 @@
 
         </form>
 
-        <!-- Table 10(Average Yeild Major Cerial Crops Districtwise) -->
+        <!-- Table 11(Average Yeild Major Cerial Crops Districtwise) -->
         <form action="/average-yeild-district-cereal-crops" id="average-yeild-district-cereal-crops" class="input-form">
             <h1 class="heading">Average Yeild Major Cerial Crops Districtwise:</h1>
 
@@ -832,7 +816,7 @@
 
         <!-- Table 26 (Agriculture Major Crop Cereal Master) -->
         <form action="/agri_major_crops_cereal_master" id="agri_major_crops_cereal_master" class="input-form">
-            <h1 class="heading"></h1>
+            <h1 class="heading">Agriculture Major Crop Cereal Master</h1>
             <label for="crop_name" class="input-labels"><b>Crop Name:</b></label>
             <input type="text"  name="crop_name" class="input-fields" >
 
@@ -1274,6 +1258,56 @@
             <button type="submit" class="submit-button">Submit</button>
 
         </form>
+
+        <input type="search" placeholder="Search.." class="search-bar">
+        <div class="side-navigation-section">
+            <ul class="side-navigation-list">
+                <li class="side-navigation-list-items"><a href="#" id="id01">Sugarcane in District</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id02">Sugarcane in Year</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id03">District Cereal Crops</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id04">Yearwise cereal Crops</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id05">Districtwise Oilseed Crops</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id06">Yearwise Oilseed Crops</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id07">Districtwise Pulses Crops:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id08">Yearwise Pulses Crops:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id09">Operational Holding District:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id10">Operational Holding Year:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id11">Average Yeild Major Cerial Crops Districtwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id12">Average Yeild Major Cerial Crops Yearwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id13">Average Yeild Major Oilseed Crops Districtwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id14">Average Yeild Major Oilseed Crops Yearwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id15">Average Yeild Major Pulses Crops Districtwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id16">Average Yeild Major Pulses Crops Yearwise:</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id17">Bio Chemical Fertilizers Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id18">Bio Chemical Fertilizers Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id19">Agriculture Irrigation Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id20">Agriculture Irrigation Potential Year</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id21">Agriculture Irrigation Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id22">Agriculture Irrigational Infrastructure Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id23">Agriculture Irrigational Infrastructure Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id24">Agriculture Land Use Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id25">Agriculture Land Use Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id26">Agriculture Major Crop Cereal Master</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id27">Agriculture Major oilseed  Master</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id28">Agriculture Major Crop Pulses Master</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id29">Agriculture Minor Irrigation Achievements District</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id30">Agriculture Minor Irrigation Achievements Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id31">Agriculture No Operational Holding District</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id32">Agriculture No Operational Holding Year</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id33">Agriculture Percentage OF Operational Holding District</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id34">Agriculture Percentage OF Operational Holding Year</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id35">Agriculture Percentage OF Operational Holding District</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id36">Agriculture Percentage OF Operational Holdings Year</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id37">Average Production Major Crops Cereal Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id38">Average Production Major Crops Cereal Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id39">Average Yeild Major Oilseed Crops Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id40">Average Production Major Oilseed Crops Yearwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id41">Average Production Major Pulses Crops Districtwise</a></li>
+                <li class="side-navigation-list-items"><a href="#" id="id42">Average Production Major Pulses Crops Yearwise</a></li>
+                <!-- <li class="side-navigation-list-itemshref="#""><a  id="id"></a></li>
+                <li class="side-navigation-list-items"><a  id="id"></a></li> -->
+            </ul>
+        </div>
     </div>
     
 
@@ -1299,7 +1333,7 @@
         <button type="submit" class="submit-button">Submit</button>
 
     </form> -->
-    <footer class="footer-distributed">
+    <footer class="footer-distributed" style="margin-top: 0;">
  
         <div class="footer-left">   
         
@@ -1390,9 +1424,202 @@
             document.getElementById("yearwise-oilseed-crops").style.display="block"
         });
 
-        document.getElementById("id0").addEventListener("click",() => {
+        document.getElementById("id07").addEventListener("click",() => {
             myFunction();
-            document.getElementById("").style.display="block"
+            document.getElementById("district-pulses-crops").style.display="block"
+        });
+
+        document.getElementById("id08").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("yearwise-pulses-crops").style.display="block"
+        });
+
+        document.getElementById("id09").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("operational-holding-district").style.display="block"
+        });
+
+        document.getElementById("id10").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("operational-holding-year").style.display="block"
+        });
+
+        document.getElementById("id11").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-district-cereal-crops").style.display="block"
+        });
+
+        document.getElementById("id12").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-yearwise-cereal-crops").style.display="block"
+        });
+
+
+        document.getElementById("id13").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-district-oilseed-crops").style.display="block"
+        });
+
+        document.getElementById("id14").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-yearwise-oilseed-crops").style.display="block"
+        });
+
+
+        document.getElementById("id15").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-district-Pulses-crops").style.display="block"
+        });
+
+
+        document.getElementById("id16").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("average-yeild-yearwise-pulses-crops").style.display="block"
+        });
+
+
+        document.getElementById("id17").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("bio-chemical-fertilizers-districtwise").style.display="block"
+        });
+
+
+        document.getElementById("id18").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("bio-chemical-fertilizers-yearwise").style.display="block"
+        });
+
+
+        document.getElementById("id19").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agriculture-irrigation-districtwise").style.display="block"
+        });
+
+
+        document.getElementById("id20").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agriculture-irrigation-potential-year").style.display="block"
+        });
+
+
+        document.getElementById("id21").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agriculture-irrigation-year").style.display="block"
+        });
+
+
+        document.getElementById("id22").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_irrigational_infrastructure_district").style.display="block"
+        });
+
+
+        document.getElementById("id23").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_irrigational_infrastructure_year").style.display="block"
+        });
+
+
+        document.getElementById("id24").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_land_use_district").style.display="block"
+        });
+
+
+        document.getElementById("id25").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_land_use_year").style.display="block"
+        });
+
+
+        document.getElementById("id26").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_major_crops_cereal_master").style.display="block"
+        });
+
+
+        document.getElementById("id27").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_major_crops_oilseeds_master").style.display="block"
+        });
+
+
+        document.getElementById("id28").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_major_crops_pulses_master").style.display="block"
+        });
+
+
+        document.getElementById("id29").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_minor_irrigation_achievements_district").style.display="block"
+        });
+
+        document.getElementById("id30").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_minor_irrigation_achievements_year").style.display="block"
+        });
+
+
+        document.getElementById("id31").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_no_operational_holdings_district").style.display="block"
+        });
+
+
+        document.getElementById("id32").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_no_operational_holdings_year").style.display="block"
+        });
+
+        document.getElementById("id33").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_percentage_of_area_operational_holdings_district").style.display="block"
+        });
+
+        document.getElementById("id34").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_percentage_of_area_operational_holdings_year").style.display="block"
+        });
+
+        document.getElementById("id35").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_percentage_operational_holdings_district").style.display="block"
+        });
+
+        document.getElementById("id36").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_percentage_operational_holdings_year").style.display="block"
+        });
+
+        document.getElementById("id37").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_cereal_district").style.display="block"
+        });
+
+        document.getElementById("id38").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_cereal_year").style.display="block"
+        });
+
+        document.getElementById("id39").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_oilseeds_district").style.display="block"
+        });
+
+        document.getElementById("id40").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_oilseeds_year").style.display="block"
+        });
+
+        document.getElementById("id41").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_pulses_district").style.display="block"
+        });
+
+        document.getElementById("id42").addEventListener("click",() => {
+            myFunction();
+            document.getElementById("agri_production_major_crops_pulses_year").style.display="block"
         });
 
     </script>
